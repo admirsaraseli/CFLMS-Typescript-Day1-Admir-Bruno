@@ -5,9 +5,9 @@ let element = document.createElement('P');
 element.innerHTML = ('Hello from pure Vanilla JS');
 document.getElementsByTagName('body')[0].appendChild(element);
 
-let myHardCodedArray: Number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let myHardCodedArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let myArray: Number[] = new Array(10);
+let myArray: number[] = new Array(10);
 for (let i = 1; i <= 10; i++){
 	myArray[i - 1] = i;
 }
@@ -20,12 +20,13 @@ console.log(myHardCodedArray);
 
 
 // FIRST STEP
-let multiplicator: Number = 1;
+let multiplicator: number = 1;
 
-function calculate(input, multi) {
-	let result: Number = input * multi;
+let calculate = (input : number, multi : number) => {
+	let result: number = input * multi;
 	return `${input} x ${multi} = ${result}`;
 }
+
 for (let i = 0; i < 10; i++){
 	main_node.append(`<div>${calculate(myArray[i], multiplicator)}</div>`);
 }
@@ -33,20 +34,20 @@ main_node.append(`<div>END FIRST STEP<hr></div>`);
 
 // SECOND STEP
 main_node.append(`<div><hr></div>`);
-let multiplicatorArray: Number[] = new Array(10);
+let multiplicatorArray: number[] = new Array(100);
 
-for (let i = 1; i <= 10; i++){
+for (let i = 1; i <= 100; i++){
 	multiplicatorArray[i - 1] = i;
 }
 
-function calculateArray(input, multi) {
-	let result: Number = input * multi;
+let calculateArray = (input : number, multi : number) =>{
+	let result: number = input * multi;
 	return `${input} x ${multi} = ${result}`;
 }
 
 
-for (let i = 0; i < 10; i++){
-	for (let j = 0; j < 10; j++) {
+for (let i = 0; i < myArray.length; i++){
+	for (let j = 0; j < multiplicatorArray.length; j++) {
 		main_node.append(`<div>${calculateArray(myArray[i], multiplicatorArray[j])}</div>`);
 	};
 	main_node.append(`<hr>`);

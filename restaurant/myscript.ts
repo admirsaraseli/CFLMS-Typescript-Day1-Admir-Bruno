@@ -58,6 +58,8 @@ $(document).ready(function () {
 						<h5 class="card-title">${data[i].name}</h5>
 						<p class="card-text">${data[i].description}</p>
 					</div>
+				</div>
+			</div>
 		`);	
 	};
 	create_Nav();

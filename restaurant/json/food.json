@@ -1,0 +1,28 @@
+food = `[
+
+	{
+			"name": "Burger",
+			"description": "The classical FatBurger.",
+			"image": "./img/burger.jpg"
+	},
+	{
+		"name": "Pizza",
+		"description": "The classical FatPizza.",
+		"image": "./img/pizza.jpg"
+	},
+
+	{
+		"name": "Churros",
+		"description": "Some sweet stuff.",
+		"image": "./img/churros.jpg"
+	},
+
+	{
+		"name": "Chips",
+		"description": "Some fatty salty Snacks",
+		"image": "./img/chips.jpg"
+	}
+
+
+
+]`;

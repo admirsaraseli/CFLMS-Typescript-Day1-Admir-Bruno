@@ -5,7 +5,7 @@ $(document).ready(function () {
 	let data: any = JSON.parse(food);
 
 	
-	function create_Nav() {
+	let create_Nav: any = () => {
 		mainNode.append(`  
 			<nav class="navbar navbar-expand-md navbar-light text-danger bg-dark">
 				<a class="navbar-brand ${lightTextColor}" href="./index.html">Home</a>
@@ -27,7 +27,7 @@ $(document).ready(function () {
 	`);
 	};
 
-	function create_Jumbo() {
+	let create_Jumbo: any = () => {
 		mainNode.append(`  
 			<div class="jumbotron jumbotron-fluid bg-info text-white">
 				<div class="container-fluid wrapper text-center">
@@ -38,7 +38,7 @@ $(document).ready(function () {
 		`);
 	};
 
-	function createFoodContainerRow() {
+	let createFoodContainerRow: any = () => {
 		mainNode.append(`  
 			<div class="container">
 				<div class="row rowNode justify-content-center"> 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 	};
 
 
-	function createFoodTable(a) {
+	let createFoodTable: any (a) => {
 		let i = a;
 		newNode.append(`  
 			<div class="col-sm-6 col-md-4 col-lg-3">

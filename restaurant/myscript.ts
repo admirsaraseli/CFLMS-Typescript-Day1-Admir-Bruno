@@ -38,7 +38,7 @@ $(document).ready(function () {
 		`);
 	};
 
-	let createFoodContainerRow: any = () => {
+	let createFoodContainerRow: any = () =>{
 		mainNode.append(`  
 			<div class="container">
 				<div class="row rowNode justify-content-center"> 
@@ -48,7 +48,7 @@ $(document).ready(function () {
 	};
 
 
-	let createFoodTable: any (a) => {
+	function createFoodTable(a) {
 		let i = a;
 		newNode.append(`  
 			<div class="col-sm-6 col-md-4 col-lg-3">

@@ -11,11 +11,11 @@ $(document).ready(function () {
     var createFoodContainerRow = function () {
         mainNode.append("  \n\t\t\t<div class=\"container\">\n\t\t\t\t<div class=\"row rowNode justify-content-center\"> \n\t\t\t\t</div>\n\t\t\t</div>\n\t\t");
     };
-    var createFoodTable;
-    (function (a) {
+    function createFoodTable(a) {
         var i = a;
         newNode.append("  \n\t\t\t<div class=\"col-sm-6 col-md-4 col-lg-3\">\n\t\t\t\t<div class=\"card mb-4 bg-dark text-white  text-center\">\n\t\t\t\t\t<img src=\"" + data[i].image + "\" class=\"card-img-top\" alt=\"Hamburger\">\n\t\t\t\t\t<div class=\"card-body\">\n\t\t\t\t\t\t<h5 class=\"card-title\">" + data[i].name + "</h5>\n\t\t\t\t\t\t<p class=\"card-text\">" + data[i].description + "</p>\n\t\t\t\t\t</div>\n\t\t");
-    });
+    }
+    ;
     create_Nav();
     create_Jumbo();
     createFoodContainerRow();
